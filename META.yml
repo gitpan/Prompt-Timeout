@@ -1,0 +1,14 @@
+--- #YAML:1.0
+name:                Prompt-Timeout
+version:             1.00
+abstract:            prompt() with auto-selecting default value in case of inactivity
+license:             perl
+author:              
+    - Serguei Trouchelle <stro@railways.dp.ua>
+generated_by:        ExtUtils::MakeMaker version 6.44
+distribution_type:   module
+requires:     
+    Term::ReadKey:                 0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3

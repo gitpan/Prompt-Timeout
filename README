@@ -25,7 +25,7 @@ DESCRIPTION
 
     Once a key is pressed, inactivity timer is disabled.
 
-    When $timeout vales is omitted, it assumes 60 seconds.
+    When $timeout value is omitted, it assumes 60 seconds.
 
 AUTHOR
     Serguei Trouchelle <stro@railways.dp.ua>

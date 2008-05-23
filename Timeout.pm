@@ -6,6 +6,8 @@
 # under the same terms as Perl itself.
 
 # History:
+#  1.01  2008/05/23 Documentation typo
+#                   Removed Term::ReadKey::ReadMode because it doesn't work on some terminals
 #  1.00  2008/05/22 Initial revision
 
 =head1 NAME
@@ -32,7 +34,7 @@ require Exporter;
 our @EXPORT = qw(prompt);
 our @ISA = qw(Exporter);
 
-$Prompt::Timeout::VERSION = "1.00";
+$Prompt::Timeout::VERSION = "1.01";
 
 =head1 DESCRIPTION
 
@@ -54,7 +56,7 @@ you can invoke it with another optional parameter:
 
 Once a key is pressed, inactivity timer is disabled.
 
-When $timeout vales is omitted, it assumes 60 seconds.
+When $timeout value is omitted, it assumes 60 seconds.
 
 =cut 
 
@@ -86,7 +88,7 @@ sub prompt ($;$$$) {
 
     my $end = time + $timeout;
 
-    ReadMode 4; # Turn off controls keys
+    #ReadMode 4; # Turn off controls keys
     while (1) {
       my $key = ReadKey(1); # 1 sec
       if (defined $key) {
@@ -102,7 +104,7 @@ sub prompt ($;$$$) {
         }
       }
     }
-    ReadMode 0; # Reset tty mode before exiting
+    #ReadMode 0; # Reset tty mode before exiting
   }
   return (!defined $ans || $ans eq '') ? $def : $ans;
 }

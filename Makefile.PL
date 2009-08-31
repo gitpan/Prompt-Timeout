@@ -1,6 +1,8 @@
 use strict;
 use warnings;
 
+# $Id: Makefile.PL 1 2009-08-31 14:00:42Z stro $
+
 use ExtUtils::MakeMaker;
 
 WriteMakefile(

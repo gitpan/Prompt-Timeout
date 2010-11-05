@@ -1,6 +1,6 @@
 # Prompt/Timeout.pm
 #
-# $Id: Timeout.pm 24 2010-11-01 14:47:00Z stro $
+# $Id: Timeout.pm 26 2010-11-05 12:39:20Z stro $
 #
 # Copyright (c) 2008, 2009 Serguei Trouchelle. All rights reserved.
 #
@@ -8,12 +8,14 @@
 # under the same terms as Perl itself.
 
 # History:
-#  1.03  2010/11/01 Fixed problem with non-working "click", thanks to bottomsc[.]missouri.edu for reporting (RT#62535)
-#                   Fixed potential problem with TAP output parsing
-#  1.02  2009/08/31 Fixed problem with hanging in Unix environment, thanks to leocharre[.]cpan.org for reporting
-#  1.01  2008/05/23 Documentation typo
-#                   Removed Term::ReadKey::ReadMode because it doesn't work on some terminals
-#  1.00  2008/05/22 Initial revision
+#  1.04_01 2010/11/05 Added more prerequisites to find out what's wrong with some test reports
+#                     Rewrite tests with Test::More
+#  1.03    2010/11/01 Fixed problem with non-working "click", thanks to bottomsc[.]missouri.edu for reporting (RT#62535)
+#                     Fixed potential problem with TAP output parsing
+#  1.02    2009/08/31 Fixed problem with hanging in Unix environment, thanks to leocharre[.]cpan.org for reporting
+#  1.01    2008/05/23 Documentation typo
+#                     Removed Term::ReadKey::ReadMode because it doesn't work on some terminals
+#  1.00    2008/05/22 Initial revision
 
 =head1 NAME
 
@@ -39,7 +41,7 @@ require Exporter;
 our @EXPORT = qw(prompt);
 our @ISA = qw(Exporter);
 
-$Prompt::Timeout::VERSION = '1.03';
+$Prompt::Timeout::VERSION = '1.04_01';
 
 =head1 DESCRIPTION
 

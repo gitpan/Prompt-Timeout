@@ -1,6 +1,6 @@
 # Prompt/Timeout.pm
 #
-# $Id: Timeout.pm 26 2010-11-05 12:39:20Z stro $
+# $Id: Timeout.pm 37 2011-06-30 06:53:16Z stro $
 #
 # Copyright (c) 2008, 2009 Serguei Trouchelle. All rights reserved.
 #
@@ -8,6 +8,7 @@
 # under the same terms as Perl itself.
 
 # History:
+#  1.04_02 2011/06/30 Continue struggling with failing reports
 #  1.04_01 2010/11/05 Added more prerequisites to find out what's wrong with some test reports
 #                     Rewrite tests with Test::More
 #  1.03    2010/11/01 Fixed problem with non-working "click", thanks to bottomsc[.]missouri.edu for reporting (RT#62535)
@@ -41,7 +42,7 @@ require Exporter;
 our @EXPORT = qw(prompt);
 our @ISA = qw(Exporter);
 
-$Prompt::Timeout::VERSION = '1.04_01';
+$Prompt::Timeout::VERSION = '1.04_02';
 
 =head1 DESCRIPTION
 

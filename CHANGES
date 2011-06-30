@@ -1,3 +1,4 @@
+#  1.04_02 2011/06/30 Continue struggling with failing reports
 #  1.04_01 2010/11/05 Added more prerequisites to find out what's wrong with some test reports
 #                     Rewrite tests with Test::More
 #  1.03    2010/11/01 Fixed problem with non-working "click", thanks to bottomsc[.]missouri.edu for reporting (RT#62535)

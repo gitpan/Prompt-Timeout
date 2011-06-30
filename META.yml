@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Prompt-Timeout
-version:            1.04_01
+version:            1.04_02
 abstract:           prompt() with auto-selecting default value in case of inactivity
 author:
     - Serguei Trouchelle <stro@cpan.org>
@@ -9,15 +9,16 @@ distribution_type:  module
 configure_requires:
     ExtUtils::MakeMaker:  0
 build_requires:
-    Test::Harness:  3.21
-    Test::More:     0.94
+    ExtUtils::MakeMaker:  0
 requires:
     Term::ReadKey:  0
+    Test::Harness:  3.21
+    Test::More:     0.94
 no_index:
     directory:
         - t
         - inc
-generated_by:       ExtUtils::MakeMaker version 6.57_05
+generated_by:       ExtUtils::MakeMaker version 6.50
 meta-spec:
     url:      http://module-build.sourceforge.net/META-spec-v1.4.html
     version:  1.4

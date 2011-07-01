@@ -8,4 +8,6 @@ BEGIN { plan tests => 1 }
 
 use Prompt::Timeout; ok(1);
 
+close(STDIN); # Clear buffer
+
 exit;

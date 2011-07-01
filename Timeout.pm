@@ -2,12 +2,13 @@
 #
 # $Id: Timeout.pm 37 2011-06-30 06:53:16Z stro $
 #
-# Copyright (c) 2008, 2009 Serguei Trouchelle. All rights reserved.
+# Copyright (c) 2008-2011 Serguei Trouchelle. All rights reserved.
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the same terms as Perl itself.
 
 # History:
+#  1.04_03 2011/06/30 Continue struggling with failing reports, part 2
 #  1.04_02 2011/06/30 Continue struggling with failing reports
 #  1.04_01 2010/11/05 Added more prerequisites to find out what's wrong with some test reports
 #                     Rewrite tests with Test::More
@@ -42,7 +43,7 @@ require Exporter;
 our @EXPORT = qw(prompt);
 our @ISA = qw(Exporter);
 
-$Prompt::Timeout::VERSION = '1.04_02';
+$Prompt::Timeout::VERSION = '1.04_03';
 
 =head1 DESCRIPTION
 
@@ -127,7 +128,7 @@ Prompt::Timeout uses partial code from ExtUtils::MakeMaker module.
 
 =head1 COPYRIGHT
 
-Copyright (c) 2008-2010 Serguei Trouchelle. All rights reserved.
+Copyright (c) 2008-2011 Serguei Trouchelle. All rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

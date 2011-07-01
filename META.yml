@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Prompt-Timeout
-version:            1.04_02
+version:            1.04_03
 abstract:           prompt() with auto-selecting default value in case of inactivity
 author:
     - Serguei Trouchelle <stro@cpan.org>

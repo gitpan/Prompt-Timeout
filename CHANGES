@@ -1,3 +1,4 @@
+#  1.04_03 2011/06/30 Continue struggling with failing reports, part 2
 #  1.04_02 2011/06/30 Continue struggling with failing reports
 #  1.04_01 2010/11/05 Added more prerequisites to find out what's wrong with some test reports
 #                     Rewrite tests with Test::More

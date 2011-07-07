@@ -16,25 +16,29 @@ diag("This test case's running time is 2 minutes. Use Ctrl-Break to break, Ctrl-
 my ($time, $res);
 
 $time = time;
-$res = prompt('Press <Enter> or wait 1 second. Do not press any other key!', 'DEF', 1, 1);
+$res = prompt('# Press <Enter> or wait 1 second. Do not press any other key!', 'DEF', 1, 1);
+print ("#\n");
 is($res, 'DEF', 'Default value with 1 sec timeout and timeout lock');
 diag('prompt returned <', $res, '> in ', time - $time, ' seconds');
 
 $time = time;
-$res = prompt('Press <Enter> or wait 1 second. Do not press any other key!', 'DEF', 1);
+$res = prompt('# Press <Enter> or wait 1 second. Do not press any other key!', 'DEF', 1);
+print ("#\n");
 is($res, 'DEF', 'Default value with 1 sec timeout');
 diag('prompt returned <', $res, '> in ', time - $time, ' seconds');
 
 diag('now wait for 2 minutes...');
 $time = time;
-$res = prompt('Press <Enter> or wait 60 seconds. ', 'DEF');
+$res = prompt('# Press <Enter> or wait 60 seconds. ', 'DEF');
+print ("#\n");
 is($res, 'DEF', 'Default value with default timeout'); # 60 seconds to run!
 diag('prompt returned <', $res, '> in ', time - $time, ' seconds');
 
 diag('one minute left...');
 
 $time = time;
-$res = prompt('Press <Enter> or wait 60 seconds. ');
+$res = prompt('# Press <Enter> or wait 60 seconds. ');
+print ("#\n");
 is($res, '', 'Default empty value with default timeout'); # 60 seconds to run!
 diag('prompt returned <', $res, '> in ', time - $time, ' seconds');
 

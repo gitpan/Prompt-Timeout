@@ -9,8 +9,11 @@ BEGIN { plan tests => 1 }
 
 use Prompt::Timeout;
 
+close(STDIN);
+open(STDIN, '<-');
+
 my $time = time;
-my $res = prompt('Press <Enter> or wait 1 second', 'DEF', 1);
+my $res = prompt('# Press <Enter> or wait 1 second', 'DEF', 1);
 
 diag('prompt returned <', $res, '> in ', time - $time, ' seconds');
 

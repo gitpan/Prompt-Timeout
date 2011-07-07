@@ -10,4 +10,6 @@ use Prompt::Timeout; ok(1);
 
 close(STDIN); # Clear buffer
 
+prompt('# Press <Enter> or wait 1 second', 'DEF', 1);
+
 exit;
